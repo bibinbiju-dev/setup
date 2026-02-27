@@ -1,0 +1,183 @@
+@import "../omarchy/current/theme/waybar.css";
+
+/* -----------------------------------------------------
+ * Global
+ * ----------------------------------------------------- */
+* {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  color: @foreground;
+}
+
+/* -----------------------------------------------------
+ * Waybar container
+ * ----------------------------------------------------- */
+#waybar {
+  background-color: @background;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  /* border-radius: 5px; */
+}
+
+/* -----------------------------------------------------
+ * Module grouping
+ * ----------------------------------------------------- */
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 0 10px;
+}
+
+/* -----------------------------------------------------
+ * Clock (visual anchor)
+ * ----------------------------------------------------- */
+#clock {
+  color: @accent;
+  padding: 0 12px;
+}
+
+/* -----------------------------------------------------
+ * Workspaces (clean underline style)
+ * ----------------------------------------------------- */
+#workspaces button {
+  padding: 0 4px;
+  /* margin: 0 2px; */
+  min-width: 18px;
+  background-color: transparent;
+  color: @workspace-text;
+  border-radius: 0;
+}
+
+#workspaces button:hover {
+  color: @accent;
+}
+
+#workspaces button.active {
+  color: @accent-strong;
+  /* border-bottom: 2px solid @accent-strong; */
+  /* background-color: #51127a; */
+  border-radius: 5px;
+}
+
+/* -----------------------------------------------------
+ * System indicators
+ * ----------------------------------------------------- */
+#cpu,
+#network,
+#pulseaudio,
+#battery,
+#bluetooth {
+  margin: 0 8px;
+  color: @foreground-dim;
+}
+
+#network {
+  color: @success;
+}
+
+#pulseaudio {
+  color: @foreground-muted;
+}
+
+#cpu {
+  color: @foreground-muted;
+}
+
+#battery {
+  color: @foreground;
+}
+
+#battery.warning {
+  color: @warning;
+}
+
+#battery.critical {
+  color: @error;
+}
+#battery.charging {
+  color: @success;
+}
+
+/* -----------------------------------------------------
+ * Brightness
+ * ----------------------------------------------------- */
+#custom-brightness {
+  margin: 0 10px;
+  color: @accent;
+}
+
+/* -----------------------------------------------------
+ * Bluetooth
+ * ----------------------------------------------------- */
+#bluetooth {
+  font-size: 16px;
+}
+
+/* -----------------------------------------------------
+ * Tray
+ * ----------------------------------------------------- */
+#tray {
+  margin: 0 10px;
+  color: @foreground;
+}
+
+/* -----------------------------------------------------
+ * Screen recording
+ * ----------------------------------------------------- */
+#custom-screenrecording-indicator {
+  color: @info;
+  margin: 0 2px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: @error;
+}
+
+/* -----------------------------------------------------
+ * Power profiles
+ * ----------------------------------------------------- */
+#custom-powerprofiles.powersaver {
+  color: @success;
+}
+
+#custom-powerprofiles.balanced {
+  color: @foreground-muted;
+}
+
+#custom-powerprofiles.performance {
+  color: @accent-strong;
+}
+
+/* -----------------------------------------------------
+ * Omarchy + updates
+ * ----------------------------------------------------- */
+#custom-omarchy {
+  font-size: 17px;
+  /* margin: 0 10px; */
+  color: @accent-strong;
+}
+
+#custom-update {
+  font-size: 16px;
+  color: @foreground-dim;
+}
+
+/* -----------------------------------------------------
+ * System menu (rightmost)
+ * ----------------------------------------------------- */
+#custom-systemmenu {
+  margin: 0 12px;
+  padding: 0 8px;
+  border-radius: 6px;
+  color: @foreground-dim;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}

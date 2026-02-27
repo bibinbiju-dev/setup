@@ -1,0 +1,61 @@
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
+
+vim.keymap.set("n", "<leader>ha", ":Alpha<CR>", { desc = "Open Dashboard" })
+vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true, silent = true })
+
+-- -- Obsidian.nvim keymaps
+-- vim.api.nvim_create_autocmd("User", {
+--   pattern = "ObsidianNoteEnter",
+--   callback = function()
+--     local actions = require("obsidian.actions")
+--     -- Smart action (follow link, toggle checkbox, etc.)
+--     vim.keymap.set("n", "<CR>", actions.smart_action, { buffer = true, desc = "Obsidian: Smart action" })
+--     -- Navigate links
+--     vim.keymap.set("n", "]o", function()
+--       actions.nav_link("next")
+--     end, { buffer = true, desc = "Obsidian: Next link" })
+--     vim.keymap.set("n", "[o", function()
+--       actions.nav_link("prev")
+--     end, { buffer = true, desc = "Obsidian: Previous link" })
+--     -- Commands
+--     vim.keymap.set("n", "<leader>on", "<cmd>Obsidian new<cr>", { buffer = true, desc = "Obsidian: New note" })
+--     vim.keymap.set(
+--       "n",
+--       "<leader>of",
+--       "<cmd>Obsidian follow_link<cr>",
+--       { buffer = true, desc = "Obsidian: Follow link" }
+--     )
+--     vim.keymap.set(
+--       "n",
+--       "<leader>oq",
+--       "<cmd>Obsidian quick_switch<cr>",
+--       { buffer = true, desc = "Obsidian: Quick switch" }
+--     )
+--     vim.keymap.set("n", "<leader>os", "<cmd>Obsidian search<cr>", { buffer = true, desc = "Obsidian: Search notes" })
+--     vim.keymap.set("n", "<leader>ob", "<cmd>Obsidian backlinks<cr>", { buffer = true, desc = "Obsidian: Backlinks" })
+--     vim.keymap.set("n", "<leader>ol", "<cmd>Obsidian links<cr>", { buffer = true, desc = "Obsidian: Links in note" })
+--     vim.keymap.set(
+--       "n",
+--       "<leader>och",
+--       "<cmd>Obsidian toggle_checkbox<cr>",
+--       { buffer = true, desc = "Obsidian: Toggle checkbox" }
+--     )
+--     vim.keymap.set("n", "<leader>otm", "<cmd>Obsidian tomorrow<cr>", { buffer = true, desc = "Obsidian: Tomorrow" })
+--     vim.keymap.set("n", "<leader>otd", "<cmd>Obsidian today<cr>", { buffer = true, desc = "Obsidian: Today" })
+--     vim.keymap.set("n", "<leader>oy", "<cmd>Obsidian yesterday<cr>", { buffer = true, desc = "Obsidian: Yesterday" })
+--     vim.keymap.set(
+--       "n",
+--       "<leader>ont",
+--       "<cmd>Obsidian new_from_template<cr>",
+--       { buffer = true, desc = "Obsidian: New from template" }
+--     )
+--     vim.keymap.set(
+--       "n",
+--       "<leader>oti",
+--       "<cmd>Obsidian template<cr>",
+--       { buffer = true, desc = "Obsidian: Insert template" }
+--     )
+--   end,
+-- })

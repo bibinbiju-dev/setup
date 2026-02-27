@@ -1,0 +1,23 @@
+@define-color background        #100D0E; /* Dracula background */
+@define-color foreground        #F8F8F2; /* Foreground */
+
+@define-color foreground-dim    #6272A4; /* Comment */
+@define-color foreground-muted  #6272A4; /* Comment */
+@define-color surface           #44475A; /* Current line / cards */
+
+@define-color accent-strong     #FF79C6; /* Pink */
+
+/* =========================
+ * Semantic colors
+ * ========================= */
+@define-color success           #50FA7B; /* Green */
+@define-color warning           #F1FA8C; /* Yellow */
+@define-color error             #FF5555; /* Red */
+@define-color info              #8BE9FD; /* Cyan */
+
+/* =========================
+ * Workspace states
+ * ========================= */
+@define-color workspace              #44475A; /* Inactive bg */
+@define-color workspace-text         #F8F8F2; /* Inactive text */
+@define-color workspace-active-text  #282A36; /* Active text */

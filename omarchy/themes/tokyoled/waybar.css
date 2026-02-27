@@ -1,0 +1,7 @@
+@define-color foreground-muted  #6272A4; /* Comment */
+@define-color accent-strong    #8BE9FD;
+@define-color background        #000000;
+@define-color success           #50FA7B; /* Green */
+@define-color warning           #F1FA8C; /* Yellow */
+@define-color error             #FF5555; /* Red */
+@define-color info              #8BE9FD;
