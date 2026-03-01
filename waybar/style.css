@@ -1,48 +1,30 @@
 @import "../omarchy/current/theme/waybar.css";
-
-/* -----------------------------------------------------
- * Global
- * ----------------------------------------------------- */
 * {
-  font-family: 'JetBrainsMono Nerd Font';
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 14px;
   font-weight: bold;
   background-color: transparent;
   color: @foreground;
 }
 
-/* -----------------------------------------------------
- * Waybar container
- * ----------------------------------------------------- */
 #waybar {
   background-color: @background;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  /* border-radius: 5px; */
 }
 
-/* -----------------------------------------------------
- * Module grouping
- * ----------------------------------------------------- */
 .modules-left,
 .modules-center,
 .modules-right {
   margin: 0 10px;
 }
 
-/* -----------------------------------------------------
- * Clock (visual anchor)
- * ----------------------------------------------------- */
 #clock {
   color: @accent;
   padding: 0 12px;
 }
 
-/* -----------------------------------------------------
- * Workspaces (clean underline style)
- * ----------------------------------------------------- */
 #workspaces button {
   padding: 0 4px;
-  /* margin: 0 2px; */
   min-width: 18px;
   background-color: transparent;
   color: @workspace-text;
@@ -55,14 +37,9 @@
 
 #workspaces button.active {
   color: @accent-strong;
-  /* border-bottom: 2px solid @accent-strong; */
-  /* background-color: #51127a; */
   border-radius: 5px;
 }
 
-/* -----------------------------------------------------
- * System indicators
- * ----------------------------------------------------- */
 #cpu,
 #network,
 #pulseaudio,
@@ -99,32 +76,20 @@
   color: @success;
 }
 
-/* -----------------------------------------------------
- * Brightness
- * ----------------------------------------------------- */
 #custom-brightness {
   margin: 0 10px;
   color: @accent;
 }
 
-/* -----------------------------------------------------
- * Bluetooth
- * ----------------------------------------------------- */
 #bluetooth {
   font-size: 16px;
 }
 
-/* -----------------------------------------------------
- * Tray
- * ----------------------------------------------------- */
 #tray {
   margin: 0 10px;
   color: @foreground;
 }
 
-/* -----------------------------------------------------
- * Screen recording
- * ----------------------------------------------------- */
 #custom-screenrecording-indicator {
   color: @info;
   margin: 0 2px;
@@ -134,9 +99,14 @@
   color: @error;
 }
 
-/* -----------------------------------------------------
- * Power profiles
- * ----------------------------------------------------- */
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 5px;
+  margin-right: 0;
+  font-size: 18px;
+  padding-bottom: 1px;
+}
 #custom-powerprofiles.powersaver {
   color: @success;
 }
@@ -149,12 +119,8 @@
   color: @accent-strong;
 }
 
-/* -----------------------------------------------------
- * Omarchy + updates
- * ----------------------------------------------------- */
 #custom-omarchy {
   font-size: 17px;
-  /* margin: 0 10px; */
   color: @accent-strong;
 }
 
@@ -163,9 +129,6 @@
   color: @foreground-dim;
 }
 
-/* -----------------------------------------------------
- * System menu (rightmost)
- * ----------------------------------------------------- */
 #custom-systemmenu {
   margin: 0 12px;
   padding: 0 8px;
