@@ -1,0 +1,69 @@
+
+# ============================
+#  Dracula theme for btop
+# ============================
+
+# Main background & foreground
+theme[main_bg]="#000"
+theme[main_fg]="#F8F8F2"
+
+# Title & boxes
+theme[title]="#F8F8F2"
+theme[hi_fg]="#BD93F9"
+theme[divider]="#44475A"
+
+# Selected item
+theme[selected_bg]="#44475A"
+theme[selected_fg]="#F8F8F2"
+
+# CPU
+theme[cpu_box]="#50FA7B"
+theme[cpu_idle]="#6272A4"
+theme[cpu_usage]="#50FA7B"
+
+# Memory
+theme[mem_box]="#8BE9FD"
+theme[mem_idle]="#6272A4"
+theme[mem_usage]="#8BE9FD"
+
+# Network
+theme[net_box]="#FF79C6"
+theme[net_idle]="#6272A4"
+theme[net_usage]="#FF79C6"
+
+# Disk
+theme[disk_box]="#F1FA8C"
+theme[disk_idle]="#6272A4"
+theme[disk_usage]="#F1FA8C"
+
+# Process states
+theme[proc_misc]="#F8F8F2"
+theme[proc_idle]="#6272A4"
+theme[proc_running]="#50FA7B"
+theme[proc_sleeping]="#8BE9FD"
+theme[proc_stopped]="#FF5555"
+theme[proc_zombie]="#FF5555"
+
+# Temperature
+theme[temp_box]="#FF5555"
+theme[temp_idle]="#6272A4"
+theme[temp_usage]="#FF5555"
+
+# Battery
+theme[battery_box]="#50FA7B"
+theme[battery_idle]="#6272A4"
+theme[battery_usage]="#50FA7B"
+
+# Graph colors
+theme[graph_bg]="#282A36"
+theme[graph_fg]="#BD93F9"
+
+# Meter colors
+theme[meter_bg]="#44475A"
+theme[meter_fg]="#F8F8F2"
+
+# Misc
+theme[info_fg]="#F8F8F2"
+theme[warning]="#F1FA8C"
+theme[error]="#FF5555"
+

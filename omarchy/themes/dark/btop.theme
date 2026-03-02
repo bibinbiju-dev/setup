@@ -1,69 +1,82 @@
+# Theme: tokyo-night
+# By: Pascal Jaeger
 
-# ============================
-#  Dracula theme for btop
-# ============================
+# Main bg
+theme[main_bg]="#000000"
 
-# Main background & foreground
-theme[main_bg]="#000"
-theme[main_fg]="#F8F8F2"
+# Main text color
+theme[main_fg]="#cfc9c2"
 
-# Title & boxes
-theme[title]="#F8F8F2"
-theme[hi_fg]="#BD93F9"
-theme[divider]="#44475A"
+# Title color for boxes
+theme[title]="#cfc9c2"
 
-# Selected item
-theme[selected_bg]="#44475A"
-theme[selected_fg]="#F8F8F2"
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#7dcfff"
 
-# CPU
-theme[cpu_box]="#50FA7B"
-theme[cpu_idle]="#6272A4"
-theme[cpu_usage]="#50FA7B"
+# Background color of selected item in processes box
+theme[selected_bg]="#414868"
 
-# Memory
-theme[mem_box]="#8BE9FD"
-theme[mem_idle]="#6272A4"
-theme[mem_usage]="#8BE9FD"
+# Foreground color of selected item in processes box
+theme[selected_fg]="#cfc9c2"
 
-# Network
-theme[net_box]="#FF79C6"
-theme[net_idle]="#6272A4"
-theme[net_usage]="#FF79C6"
+# Color of inactive/disabled text
+theme[inactive_fg]="#565f89"
 
-# Disk
-theme[disk_box]="#F1FA8C"
-theme[disk_idle]="#6272A4"
-theme[disk_usage]="#F1FA8C"
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#7dcfff"
 
-# Process states
-theme[proc_misc]="#F8F8F2"
-theme[proc_idle]="#6272A4"
-theme[proc_running]="#50FA7B"
-theme[proc_sleeping]="#8BE9FD"
-theme[proc_stopped]="#FF5555"
-theme[proc_zombie]="#FF5555"
+# Cpu box outline color
+theme[cpu_box]="#565f89"
 
-# Temperature
-theme[temp_box]="#FF5555"
-theme[temp_idle]="#6272A4"
-theme[temp_usage]="#FF5555"
+# Memory/disks box outline color
+theme[mem_box]="#565f89"
 
-# Battery
-theme[battery_box]="#50FA7B"
-theme[battery_idle]="#6272A4"
-theme[battery_usage]="#50FA7B"
+# Net up/down box outline color
+theme[net_box]="#565f89"
 
-# Graph colors
-theme[graph_bg]="#282A36"
-theme[graph_fg]="#BD93F9"
+# Processes box outline color
+theme[proc_box]="#565f89"
 
-# Meter colors
-theme[meter_bg]="#44475A"
-theme[meter_fg]="#F8F8F2"
+# Box divider line and small boxes line color
+theme[div_line]="#565f89"
 
-# Misc
-theme[info_fg]="#F8F8F2"
-theme[warning]="#F1FA8C"
-theme[error]="#FF5555"
+# Temperature graph colors
+theme[temp_start]="#9ece6a"
+theme[temp_mid]="#e0af68"
+theme[temp_end]="#f7768e"
+
+# CPU graph colors
+theme[cpu_start]="#9ece6a"
+theme[cpu_mid]="#e0af68"
+theme[cpu_end]="#f7768e"
+
+# Mem/Disk free meter
+theme[free_start]="#9ece6a"
+theme[free_mid]="#e0af68"
+theme[free_end]="#f7768e"
+
+# Mem/Disk cached meter
+theme[cached_start]="#9ece6a"
+theme[cached_mid]="#e0af68"
+theme[cached_end]="#f7768e"
+
+# Mem/Disk available meter
+theme[available_start]="#9ece6a"
+theme[available_mid]="#e0af68"
+theme[available_end]="#f7768e"
+
+# Mem/Disk used meter
+theme[used_start]="#9ece6a"
+theme[used_mid]="#e0af68"
+theme[used_end]="#f7768e"
+
+# Download graph colors
+theme[download_start]="#9ece6a"
+theme[download_mid]="#e0af68"
+theme[download_end]="#f7768e"
+
+# Upload graph colors
+theme[upload_start]="#9ece6a"
+theme[upload_mid]="#e0af68"
+theme[upload_end]="#f7768e"
 
