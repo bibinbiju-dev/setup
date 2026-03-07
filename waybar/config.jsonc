@@ -51,9 +51,9 @@
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
-    "format-muted": "",
+    "format-muted": " ",
     "format-icons": {
-      "headphone": "",
+      "headphone": " ",
       "default": ["", "", ""],
     },
   },
@@ -63,14 +63,14 @@
     "signal": 9,
     "return-type": "json",
   },
-  "custom/brightness": {
-    "exec": "~/.config/waybar/my-scripts/bright.sh",
-    "on-click": "~/.config/waybar/my-scripts/bright.sh up",
-    "on-click-right": "~/.config/waybar/my-scripts/bright.sh down",
-    "return-type": "text",
-    "interval": 2,
-    "format": "󰃠 {}",
-  },
+  // "custom/brightness": {
+  //   "exec": "~/.config/waybar/my-scripts/bright.sh",
+  //   "on-click": "~/.config/waybar/my-scripts/bright.sh up",
+  //   "on-click-right": "~/.config/waybar/my-scripts/bright.sh down",
+  //   "return-type": "text",
+  //   "interval": 2,
+  //   "format": "󰃠 {}",
+  // },
 
   "custom/omarchy": {
     "format": " ",
@@ -93,13 +93,13 @@
     "tooltip": false,
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
   },
-  "cpu": {
-    "interval": 5,
-    "format": "󰍛 ",
-    //"on-click": "omarchy-launch-or-focus-tui btop"
-    //"on-click": "exec kitty -e btop"
-    "on-click": "gnome-system-monitor",
-  },
+  // "cpu": {
+  //   "interval": 5,
+  //   "format": "󰍛 ",
+  //   //"on-click": "omarchy-launch-or-focus-tui btop"
+  //   //"on-click": "exec kitty -e btop"
+  //   "on-click": "gnome-system-monitor",
+  // },
 
   "bluetooth": {
     "format": "",
@@ -149,12 +149,13 @@
     "on-click": "omarchy-menu power",
     "return-type": "json",
   },
-  "custom/systemmenu": {
-    "format": "", // Power icon
-    "tooltip": "System Menu",
-    "on-click": "omarchy-menu system",
-    "interval": 0,
-  },
+  // "custom/systemmenu": {
+  //   "format": "", // Power icon
+  //   "tooltip": "System Menu",
+  //   "on-click": "omarchy-menu system",
+  //   "interval": 0,
+  // },
+
   "group/tray-expander": {
     "orientation": "inherit",
     "drawer": {
@@ -163,10 +164,13 @@
     },
     "modules": ["custom/expand-icon", "tray"],
   },
-
   "custom/expand-icon": {
     "format": "",
     "tooltip": false,
+    "on-scroll-up": "",
+    "on-scroll-down": "",
+    "on-scroll-left": "",
+    "on-scroll-right": "",
   },
   "custom/voxtype": {
     "exec": "omarchy-voxtype-status",
