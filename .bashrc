@@ -11,8 +11,7 @@ source ~/.local/share/omarchy/default/bash/rc
 # alias p='python'
 alias c='clear'
 alias ani='ani-cli'
-alias tk='tmux kill-server'
 alias tt='tmux'
 alias n='nvim'
-
+alias vf='nvim $(fzf -m --preview="bat --color=always {}")'
 . "$HOME/.local/share/../bin/env"

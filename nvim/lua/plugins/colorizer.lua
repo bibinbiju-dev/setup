@@ -14,7 +14,7 @@ return {
         hsl_fn = true, -- hsl(), hsla()
         css = true,
         css_fn = true,
-        mode = "background",
+        mode = "foreground",
       },
     })
   end,

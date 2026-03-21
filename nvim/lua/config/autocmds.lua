@@ -6,19 +6,19 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
--- vim.cmd([[
---   augroup LiveServerAutoSave
---     autocmd!
---     autocmd TextChanged,TextChangedI * silent! wall
---   augroup END
--- ]])
---
+
+vim.cmd([[
+  augroup LiveServerAutoSave
+    autocmd!
+    autocmd InsertLeave,TextChanged * silent! write
+  augroup END
+]])
 
 --WARN: Disable diagnostics only for Markdown files
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "markdown", "md" },
+  pattern = { "markdown" },
   callback = function(args)
-    vim.diagnostic.disable(args.buf)
+    vim.diagnostic.enable(false, { bufnr = args.buf })
   end,
 })
 
