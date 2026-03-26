@@ -9,9 +9,11 @@ source ~/.local/share/omarchy/default/bash/rc
 #
 # Make an alias for invoking commands you use constantly
 # alias p='python'
+# alias cx="claude --permission-mode=plan --allow-dangerously-skip-permissions"
 alias c='clear'
 alias ani='ani-cli'
 alias tt='tmux'
 alias n='nvim'
+alias y='yazi'
 alias vf='nvim $(fzf -m --preview="bat --color=always {}")'
 . "$HOME/.local/share/../bin/env"
