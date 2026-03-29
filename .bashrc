@@ -16,4 +16,8 @@ alias tt='tmux'
 alias n='nvim'
 alias y='yazi'
 alias vf='nvim $(fzf -m --preview="bat --color=always {}")'
+# alias mvfz='mv "$(fd --type f | fzf)" "$(zoxide query -l | fzf)"'
+# alias cpfz='cp "$(fd --type f | fzf)" "$(zoxide query -l | fzf)"'
+alias mvfz='mv -iv "$(fd --type f -H -I --exclude .git | fzf)" "$(zoxide query -l | fzf)"'
+alias cpfz='cp -iv "$(fd --type f -H -I --exclude .git | fzf)" "$(zoxide query -l | fzf)"'
 . "$HOME/.local/share/../bin/env"

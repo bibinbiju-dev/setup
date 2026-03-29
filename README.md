@@ -26,17 +26,20 @@ My Omarchy Linux configuration files managed with GNU Stow.
 ## Setup
 
 1. Install GNU Stow:
+
    ```bash
    sudo pacman -S stow
    ```
 
 2. Clone this repo:
+
    ```bash
    git clone https://github.com/<your-username>/dotfiles.git ~/dotfiles
    cd ~/dotfiles
    ```
 
 3. Install configs:
+
    ```bash
    make install
    ```
@@ -44,11 +47,13 @@ My Omarchy Linux configuration files managed with GNU Stow.
 ## Usage
 
 To update a single config (e.g., after editing):
+
 ```bash
 stow -v -t ~ hypr
 ```
 
 To restow all:
+
 ```bash
 make install
 ```
