@@ -5,7 +5,6 @@ tags: []
 ---
 
 # PLYMOUTH CHANGES
-
 [[VLC]]
 [[ssh_git]]
 [[python-nvim-setup]]
