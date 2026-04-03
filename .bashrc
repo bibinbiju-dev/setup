@@ -26,3 +26,15 @@ alias vf='nvim $(fd --type f -H -I --exclude .git | fzf -m --preview="bat --colo
 alias mvfz='mv -iv "$(fd --type f -H -I --exclude .git | fzf)" "$(zoxide query -l | fzf)"'
 alias cpfz='cp -iv "$(fd --type f -H -I --exclude .git | fzf)" "$(zoxide query -l | fzf)"'
 . "$HOME/.local/share/../bin/env"
+
+jf() {
+  local dir
+  dir=$(
+    (
+      zoxide query -l
+      fd --type d . ~ 2>/dev/null
+    ) | awk '!seen[$0]++' | fzf --height 40% --reverse --border
+  ) || return
+
+  cd "$dir" || return
+}
