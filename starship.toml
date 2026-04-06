@@ -1,5 +1,4 @@
 
-
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
@@ -11,18 +10,7 @@ $directory\
 $git_branch\
 $git_commit\
 $git_status\
-$c\
-$elixir\
-$elm\
-$golang\
-$haskell\
-$java\
-$julia\
 $nodejs\
-$nim\
-$rust\
-$scala\
-$conda\
 $python\
 $time\n  \
 [󱞪](fg:iris) \
@@ -74,12 +62,12 @@ format = "[](fg:overlay)[ $symbol $branch ]($style)[](fg:overlay) "
 style = "bg:overlay fg:foam"
 symbol = ""
 
-[git_commit]
-format = "[](fg:overlay)[ 󰜘 $hash ]($style)[](fg:overlay) "
-style = "bg:overlay fg:foam"
-tag_symbol = " 󰓼 "
-only_detached = false
-
+# [git_commit]
+# format = "[](fg:overlay)[ 󰜘 $hash ]($style)[](fg:overlay) "
+# style = "bg:overlay fg:foam"
+# tag_symbol = " 󰓼 "
+# only_detached = false
+#
 [git_status]
 disabled = false
 style = "bg:overlay fg:love"
@@ -96,69 +84,34 @@ diverged = '⇕[\[](bg:overlay fg:iris)[⇡\(${ahead_count}\)](bg:overlay fg:foa
 behind = '[⇣\(${count}\)](bg:overlay fg:rose)'
 
 [time]
-disabled = false
+disabled = true
 format = " [](fg:overlay)[ $time  ]($style)[](fg:overlay)"
 style = "bg:overlay fg:rose"
 time_format = "%I:%M%P"
 use_12hr = true
 
+
 [username]
-disabled = false
+disabled = true
 format = "[](fg:overlay)[   $user ]($style)[](fg:overlay) "
 show_always = true
 style_root = "bg:overlay fg:iris"
 style_user = "bg:overlay fg:iris"
 
 [hostname]
-ssh_only = true
+ssh_only = false
 ssh_symbol = "󱓞 "
 format = "[](fg:overlay)[ $ssh_symbol $hostname ]($style)[](fg:overlay) "
 style = "bg:overlay fg:iris"
-disabled = false
+disabled = true
 
 # Languages
 
 [c]
 style = "bg:overlay fg:pine"
 format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
+disabled = true
 symbol = " "
-
-[elixir]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
-symbol = " "
-
-[elm]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
-symbol = " "
-
-[golang]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
-symbol = " "
-
-[haskell]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
-symbol = " "
-
-[java]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
-symbol = " "
-
-[julia]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
-symbol = " "
 
 [nodejs]
 style = "bg:overlay fg:pine"
@@ -166,33 +119,10 @@ format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
 disabled = false
 symbol = "󰎙 "
 
-[nim]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
-symbol = "󰆥 "
-
-[rust]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
-symbol = " "
-
-[scala]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
-disabled = false
-symbol = " "
-
 [python]
 style = "bg:overlay fg:pine"
 format = " [](fg:overlay)[ $symbol$version ]($style)[](fg:overlay)"
 disabled = false
 symbol = ' '
 
-[conda]
-style = "bg:overlay fg:pine"
-format = " [](fg:overlay)[ $symbol$environment ]($style)[](fg:overlay)"
-disabled = false
-symbol = '🅒 '
 

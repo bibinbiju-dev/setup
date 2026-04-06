@@ -7,7 +7,12 @@
   "margin-top": 0,
   "margin-right": 0,
   "margin-left": 0,
-  "modules-center": ["clock", "custom/update", "custom/idle-indicator"],
+  "modules-center": [
+    "clock",
+    "custom/update",
+    "custom/idle-indicator",
+    "custom/notification-silencing-indicator",
+  ],
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
   "modules-right": [
     // "custom/brightness",
@@ -72,6 +77,13 @@
   //   "format": "󰃠 {}",
   // },
 
+  "custom/notification-silencing-indicator": {
+    "on-click": "omarchy-toggle-notification-silencing",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/notification-silencing.sh",
+    "signal": 10,
+    "return-type": "json",
+  },
+
   "custom/omarchy": {
     "format": " ",
     "on-click": "omarchy-menu",
@@ -125,8 +137,8 @@
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
     "format-disconnected": "󰤮",
-    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-    "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)",
+    "tooltip-format-ethernet": "Connected",
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
