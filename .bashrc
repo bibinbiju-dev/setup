@@ -25,6 +25,9 @@ alias y='yazi'
 alias vf='nvim $(fd --type f -H -I --exclude .git | fzf -m --preview="bat --color=always {}")'
 alias mvfz='mv -iv "$(fd --type f -H -I --exclude .git | fzf)" "$(zoxide query -l | fzf)"'
 alias cpfz='cp -iv "$(fd --type f -H -I --exclude .git | fzf)" "$(zoxide query -l | fzf)"'
+alias sv="source .venv/bin/activate"
+alias venv='[ -f .venv/bin/activate ] && source .venv/bin/activate || echo "No .venv found"'
+
 . "$HOME/.local/share/../bin/env"
 
 jf() {
