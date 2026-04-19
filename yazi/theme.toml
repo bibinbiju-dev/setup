@@ -1,0 +1,135 @@
+# vim:fileencoding=utf-8:foldmethod=marker
+
+[mgr]
+cwd = { fg = "#7dcfff" }
+
+find_keyword  = { fg = "#e0af68", bold = true, italic = true, underline = true }
+find_position = { fg = "#bb9af7", bg = "reset", bold = true, italic = true }
+
+marker_copied   = { fg = "#9ece6a", bg = "#9ece6a" }
+marker_cut      = { fg = "#f7768e", bg = "#f7768e" }
+marker_marked   = { fg = "#7dcfff", bg = "#7dcfff" }
+marker_selected = { fg = "#e0af68", bg = "#e0af68" }
+
+count_copied   = { fg = "#1a1b26", bg = "#9ece6a" }
+count_cut      = { fg = "#1a1b26", bg = "#f7768e" }
+count_selected = { fg = "#1a1b26", bg = "#e0af68" }
+
+border_symbol = "│"
+border_style  = { fg = "#565f89" }
+
+# Tabs
+[tabs]
+active   = { fg = "#1a1b26", bg = "#7aa2f7", bold = true }
+inactive = { fg = "#7aa2f7", bg = "#24283b" }
+
+# Mode
+[mode]
+normal_main = { fg = "#1a1b26", bg = "#7aa2f7", bold = true }
+normal_alt  = { fg = "#7aa2f7", bg = "#24283b" }
+
+select_main = { fg = "#1a1b26", bg = "#7dcfff", bold = true }
+select_alt  = { fg = "#7dcfff", bg = "#24283b" }
+
+unset_main = { fg = "#1a1b26", bg = "#f7768e", bold = true }
+unset_alt  = { fg = "#f7768e", bg = "#24283b" }
+
+# Status
+[status]
+perm_sep   = { fg = "#565f89" }
+perm_type  = { fg = "#7aa2f7" }
+perm_read  = { fg = "#e0af68" }
+perm_write = { fg = "#f7768e" }
+perm_exec  = { fg = "#9ece6a" }
+
+progress_label  = { fg = "#c0caf5", bold = true }
+progress_normal = { fg = "#9ece6a", bg = "#414868" }
+progress_error  = { fg = "#e0af68", bg = "#f7768e" }
+
+# Pick
+[pick]
+border   = { fg = "#7aa2f7" }
+active   = { fg = "#bb9af7", bold = true }
+
+# Input
+[input]
+border   = { fg = "#7aa2f7" }
+selected = { reversed = true }
+
+# Completion
+[cmp]
+border = { fg = "#7aa2f7" }
+
+# Tasks
+[tasks]
+border  = { fg = "#7aa2f7" }
+hovered = { fg = "#bb9af7", bold = true }
+
+# Which
+[which]
+mask            = { bg = "#24283b" }
+cand            = { fg = "#7dcfff" }
+rest            = { fg = "#565f89" }
+desc            = { fg = "#bb9af7" }
+separator       = "  "
+separator_style = { fg = "#414868" }
+
+# Help
+[help]
+on      = { fg = "#7dcfff" }
+run     = { fg = "#bb9af7" }
+hovered = { reversed = true, bold = true }
+footer  = { fg = "#1a1b26", bg = "#c0caf5" }
+
+# Spot
+[spot]
+border   = { fg = "#7aa2f7" }
+title    = { fg = "#7aa2f7" }
+tbl_col  = { fg = "#7dcfff" }
+tbl_cell = { fg = "#bb9af7", bg = "#414868" }
+
+# Notify
+[notify]
+title_info  = { fg = "#9ece6a" }
+title_warn  = { fg = "#e0af68" }
+title_error = { fg = "#f7768e" }
+
+# Filetype
+[filetype]
+rules = [
+	{ mime = "image/*", fg = "#7dcfff" },
+	{ mime = "{audio,video}/*", fg = "#e0af68" },
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#bb9af7" },
+	{ mime = "application/{pdf,doc,rtf}", fg = "#9ece6a" },
+	{ mime = "vfs/{absent,stale}", fg = "#565f89" },
+	{ url = "*", fg = "#c0caf5" },
+	{ url = "*/", fg = "#7aa2f7" },
+]
+
+# Icons (same, just recolored)
+[icon]
+dirs = [
+	{ name = ".config", text = "", fg = "#bb9af7" },
+	{ name = ".git", text = "", fg = "#7dcfff" },
+	{ name = ".github", text = "", fg = "#7aa2f7" },
+	{ name = "Desktop", text = "", fg = "#7dcfff" },
+	{ name = "Documents", text = "", fg = "#7dcfff" },
+	{ name = "Downloads", text = "", fg = "#7dcfff" },
+	{ name = "Music", text = "", fg = "#7dcfff" },
+	{ name = "Pictures", text = "", fg = "#7dcfff" },
+]
+
+conds = [
+	{ if = "orphan", text = "", fg = "#c0caf5" },
+	{ if = "link", text = "", fg = "#565f89" },
+	{ if = "block", text = "", fg = "#f7768e" },
+	{ if = "char", text = "", fg = "#f7768e" },
+	{ if = "fifo", text = "", fg = "#f7768e" },
+	{ if = "sock", text = "", fg = "#f7768e" },
+	{ if = "dummy", text = "", fg = "#f7768e" },
+
+	{ if = "dir & hovered", text = "", fg = "#7aa2f7" },
+	{ if = "dir", text = "", fg = "#7aa2f7" },
+	{ if = "exec", text = "", fg = "#9ece6a" },
+	{ if = "!dir", text = "", fg = "#c0caf5" },
+]
